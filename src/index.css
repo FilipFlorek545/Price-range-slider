@@ -1,13 +1,92 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.App {
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.employee {
+  border: 1px solid lightgray;
+  padding: 4px;
+  margin-bottom: 2px;
+  width: 200px;
 }
+.hires{
+  display: flex;
+  flex-direction: column;
+}
+.name{
+  padding: 10px 0;
+}
+
+input {
+  margin-left: 5px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  border: 1px solid lightgray;
+  padding: 5px;
+  border-radius: 4px;
+  width: 150px;
+}
+.priceSliderWrapper{
+  width: 400px;
+  position: relative;
+}
+.inputWrapper{
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+.inputWrapper input{
+  width: 30%;
+  margin: 0 5px 20px;
+  text-align: center;
+  -webkit-appearance: none;
+}
+.inputWrapper span{
+  padding: 5px;
+}
+.priceSliderAll{
+  opacity: 0.3;
+  background-color: #000;
+  z-index: 0;
+  height: 2px;
+  width: 100%;
+  position: absolute;
+}
+.priceSliderAllWrapper{
+  padding: 1.5em 0;
+  margin: -1.5em 0;
+  cursor: pointer;
+}
+.priceSliderSelected{
+  opacity: 1;
+  background-color: #f0000f;
+  z-index: 1;
+  position: absolute;
+  height: 2px;
+}
+.priceSliderSet{
+  width: 12px;
+  height: 12px;
+  background-color: #f0000f;
+  margin-top: -5px;
+  margin-left: -6px;
+  border-radius: 50%;
+  touch-action: none;
+  cursor: pointer;
+  position: absolute;
+}
+.handleOne{
+  z-index: 1000;
+  cursor: grab;
+
+}
+.handleTwo{
+  z-index: 500;
+  cursor: grab;
+}
+
+
